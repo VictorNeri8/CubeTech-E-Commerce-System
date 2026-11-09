@@ -249,13 +249,15 @@ The application was tested using the assessment's acceptance checks.
 
 ## 12. AI Assistance Disclosure
 
-AI assistance was used during development for technical guidance, code explanation, debugging, documentation, and reviewing implementation approaches. I used CLAUDE and CHATGPT in developing this project.
+AI assistance was used during development for technical guidance, code explanation, debugging, documentation, and reviewing implementation approaches. I only used CHATGPT in developing this project.
 
 
 ## 13. Project Information
 
 **Project:** CubeTech E-Commerce System
+
 **Assessment:** Web Development Internship Assessment
+
 **Company:** CubeTech Innovations
-**Developer:** Victor Libutlibut
+
 
