@@ -1,0 +1,21 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+vendor/
+node_modules/
+
+# Logs
+*.log
+
+# Temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# IDE settings
+.vscode/
+.idea/
