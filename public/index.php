@@ -24,6 +24,9 @@ $products = $productModel->getActiveProducts(
 $stmt = $pdo->query("SELECT * FROM categories ORDER BY name ASC");
 $categories = $stmt->fetchAll();
 
+// Retrieve featured products (latest active products)
+$featuredProducts = $productModel->getActiveProducts('', null, 'newest');
+$featuredProducts = array_slice($featuredProducts, 0, 4);
 ?>
 
 <!DOCTYPE html>
@@ -91,7 +94,7 @@ $categories = $stmt->fetchAll();
                     <?php if (!empty($_SESSION['customer_id'])): ?>
 
                         <a href="account.php">My Account</a>
-                        <a href="cart.php">My Cart</a>
+                       <!--  <a href="cart.php">My Cart</a> -->
                         <a href="orders.php">My Orders</a>
                         <a href="logout.php" class="logout-link">Log Out</a>
 
