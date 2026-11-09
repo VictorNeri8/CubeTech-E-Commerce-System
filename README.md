@@ -223,35 +223,29 @@ The application uses server-side processing for important operations, including 
 
 ## 10. Testing and Verification
 
-The application should be evaluated using the assessment's acceptance checks.
+The application was tested using the assessment's acceptance checks.
 
-| No. | Acceptance Check                                                                                                          | Result |
-| --- | ------------------------------------------------------------------------------------------------------------------------- | ------ |
-| 01  | Product search, category filtering, and price sorting work together.                                                      | Pass   |
-| 02  | Cart quantities, persistence, and total calculations work correctly.                                                      | Pass   |
-| 03  | Empty checkout and invalid customer information are rejected.                                                             | Pass   |
-| 04  | Inactive and out-of-stock products cannot be ordered. Checkout checks current prices and availability.                    | Pass   |
-| 05  | Successful orders appear in the admin dashboard and update inventory correctly.                                           | Pass   |
-| 06  | Admin product and category changes are reflected on the customer website. Referenced records are protected from deletion. | Pass   |
-| 07  | Valid order status changes work and eligible cancellations restore stock only once.                                       | Pass   |
-| 08  | Dashboard sales and customer summaries match the underlying order records.                                                | Pass   |
-| 09  | Existing order item details remain unchanged after product edits.                                                         | Pass   |
-| 10  | Customer and admin interfaces work on desktop and mobile screen sizes.                                                    | Pass   |
-
-Record the actual Pass, Fail, or Not Tested result and a short explanation for each check before submission.
+| No. | Acceptance Check | Result |
+|:---:|---|:---:|
+| 01 | Product search, category filtering, and price sorting work together. | Pass |
+| 02 | Cart quantities, persistence, and total calculations work correctly. | Pass |
+| 03 | Empty checkout and invalid customer information are rejected. | Pass |
+| 04 | Inactive and out-of-stock products cannot be ordered. Checkout checks current prices and availability. | Pass |
+| 05 | Successful orders appear in the admin dashboard and update inventory correctly. | Pass |
+| 06 | Admin product and category changes are reflected on the customer website. Referenced records are protected from deletion. | Pass |
+| 07 | Valid order status changes work and eligible cancellations restore stock only once. | Pass |
+| 08 | Dashboard sales and customer summaries match the underlying order records. | Pass |
+| 09 | Existing order item details remain unchanged after product edits. | Pass |
+| 10 | Customer and admin interfaces work on desktop and mobile screen sizes. | Pass |
 
 ## 11. Screenshots and Demonstration
-
-The assessment submission should include:
 
 
 ### Customer Homepage
 ![Customer Homepage](screenshots/Assesment-Desktop-Store.png)
 
-- Mobile screenshots of the customer website.
-- Screenshots of the admin dashboard and management pages.
-- A completed acceptance test log.
-- A 3–5 minute demonstration video showing a customer purchase and its management through the admin dashboard.
+### Admin Dashboard
+![Admin Dashboard](screenshots/Assesment-Desktop-Products.png)
 
 ## 12. AI Assistance Disclosure
 
