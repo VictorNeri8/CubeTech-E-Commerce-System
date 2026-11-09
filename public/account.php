@@ -107,6 +107,78 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 
+<header class="navbar">
+    <div class="container nav-content">
+
+        <a href="index.php" class="logo">
+    <img src="assets/images/favicon.svg" alt="CubeTech" class="logo-icon">
+    <span>CubeTech</span>
+</a>
+
+       
+
+        <div class="nav-actions">
+
+            <a href="cart.php" class="cart-link">
+                Cart
+            </a>
+
+            <div class="account-menu">
+
+                <button
+                    type="button"
+                    class="account-menu-toggle"
+                    id="accountMenuToggle"
+                    aria-expanded="false"
+                    aria-controls="accountDropdown"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path>
+                    </svg>
+
+                    <span>
+                        <?= !empty($_SESSION['customer_id'])
+                            ? htmlspecialchars($_SESSION['customer_name'])
+                            : 'Login' ?>
+                    </span>
+                </button>
+
+                <div class="account-dropdown" id="accountDropdown">
+
+                    <?php if (!empty($_SESSION['customer_id'])): ?>
+
+                        <a href="account.php">My Account</a>
+                        <a href="cart.php">My Cart</a>
+                        <a href="orders.php">My Orders</a>
+                        <a href="logout.php" class="logout-link">Log Out</a>
+
+                    <?php else: ?>
+
+                        <a href="login.php">Log In</a>
+                        <a href="register.php">Create Account</a>
+
+                    <?php endif; ?>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
 <main class="account-container">
     <div class="account-card">
         <h1>My Account</h1>
@@ -193,5 +265,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </main>
 
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
